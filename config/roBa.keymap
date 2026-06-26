@@ -133,7 +133,7 @@
 &kp Q             &kp W         &kp E         &kp R                           &kp T                                                       &kp Y          &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                           &kp G        &kp LS(LG(S))                    &kp EXCL      &kp H          &kp J  &kp K      &kp L    &kp ENTER
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                           &kp B        &kp ESCAPE                       &kp QUESTION  &kp N          &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG_HIRAGANA  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_5      &lt 1 TAB     &kp BACKSPACE                             &kp DEL
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL JP_KANA  &lt 2 SPACE  &lt_to_layer_0 3 JP_EISU      &lt 1 TAB     &kp BACKSPACE                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
