@@ -31,7 +31,9 @@
 #define MOUSE 4
 
 &trackball_listener {
-    input-processors = <&zip_temp_layer 4 10000>;
+    status = "okay";
+    device = <&trackball>;
+    input-processors = <&zip_temp_layer MOUSE 10000>;
 };
 
 &mt {
