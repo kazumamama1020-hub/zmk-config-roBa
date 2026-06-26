@@ -30,7 +30,7 @@
 #define JP_HANZEN       GRAVE             // 半角/全角
 #define MOUSE 4
 
-&mkp_input_listener {
+&trackball_listener {
     input-processors = <&zip_temp_layer 4 10000>;
 };
 
@@ -40,7 +40,7 @@
 };
 
 &trackball {
-    automouse-layer = <4>;
+    automouse-layer = <255>;
     scroll-layers = <5>;
 
     // arrows {
