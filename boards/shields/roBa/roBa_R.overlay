@@ -1,7 +1,17 @@
 #include "roBa.dtsi"
+#include <input/processors.dtsi> //add
 
 &default_transform {
     col-offset = <6>;
+};
+
+&zip_temp_layer {
+    excluded-positions = <
+        18 // J
+        19 // K
+        21 // ;
+        34 // Ctrl
+    >;
 };
 
 &kscan0 {
