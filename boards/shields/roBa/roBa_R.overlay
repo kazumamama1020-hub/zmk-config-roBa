@@ -1,5 +1,5 @@
 #include "roBa.dtsi"
-#include <input/roBa.dtsi> //add
+#include <input/processors.dtsi> //add
 
 &default_transform {
     col-offset = <6>;
