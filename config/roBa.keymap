@@ -113,11 +113,7 @@
             key-positions = <31 32>;
         };
 
-        aaa {
-            bindings = <&none>;
-            key-positions = <22 34>;
-        };
-    };
+      };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -180,30 +176,30 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                     &kp T                                                    &kp Y          &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                     &kp G        &kp LS(LG(S))                 &kp EXCL      &kp H          &kp J  &kp K      &kp L    &kp ENTER
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                     &kp B        &kp ESCAPE                    &kp QUESTION  &kp N          &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL JP_KANA  &lt 2 SPACE  &lt_to_layer_0 3 JP_EISU      &lt 1 TAB     &kp BACKSPACE                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R                     &kp T                                                    &kp Y  &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                     &kp G        &kp LS(LG(S))                 &kp F9        &kp H  &kp J  &kp K      &kp L    &kp ENTER
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                     &kp B        &kp ESCAPE                    &kp F10       &kp N  &kp M  &kp COMMA  &kp DOT  &kp MINUS
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL JP_KANA  &lt 2 SPACE  &lt_to_layer_0 3 JP_EISU      &lt 1 F2     &kp BACKSPACE                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        FUNCTION {
+        FUNCTION {           // Layer1
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &kp A   &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4    &kp NUMBER_5                                    &kp JP_LBRACKET  &kp JP_RBRACKET  &kp F6    &kp F7        &kp F8
+&kp JP_EQUAL    &kp JP_YEN      &kp JP_AMPERSAND &kp DOLLAR      &kp JP_UNDERSCORE    &trans        &kp F5       &kp JP_LPAREN    &kp JP_RPAREN    &kp EXCL  &kp F9        &kp F4
+&kp JP_DQUOTE   &kp JP_ QUOTE   &kp JP_CARET     &kp JP_AT       &kp JP_              &trans        &trans       &kp JP_LBRACE    &kp JP_RBRACE    &trans    &kp PERCENT   &kp F12
+&trans          &trans          &trans           &trans          &trans               &trans        &trans       &trans                            &kp F3
             >;
         };
 
         NUM {
             bindings = <
-&kp CARET                   &kp AMPERSAND    &kp TILDE        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                       &none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none
-&kp SLASH                   &kp EXCL         &kp AT           &kp HASH              &kp DOLLAR             &kp LC(LA(KP_NUMBER_0))      &none   &none         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp UNDER             &kp PERCENT            &kp EQUAL                    &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
-&trans                      &trans           &trans           &trans                &trans                 &trans                       &trans  &trans                                                  &trans
+&kp CARET                   &kp AMPERSAND    &kp TILDE        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                       &kp JP_PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH
+&kp SLASH                   &kp EXCL         &kp AT           &kp HASH              &kp DOLLAR             &kp LC(LA(KP_NUMBER_0))      &none   &kp MISNUS       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp UNDER             &kp PERCENT            &kp EQUAL                    &trans  &kp JP_ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
+&trans                      &trans           &trans           &trans                &trans                 &trans                       &trans  &trans                                                     &kp
             >;
         };
 
