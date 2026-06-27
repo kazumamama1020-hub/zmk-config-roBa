@@ -188,8 +188,8 @@
         FUNCTION {           // Layer1
             bindings = <
 &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4    &kp NUMBER_5                                    &kp JP_LBRACKET  &kp JP_RBRACKET  &kp F6    &kp F7        &kp F8
-&kp JP_EQUAL    &kp JP_YEN      &kp JP_AMPERSAND &kp DOLLAR      &kp JP_UNDERSCORE    &trans        &kp F5       &kp JP_LPAREN    &kp JP_RPAREN    &kp EXCL  &kp F9        &kp F4
-&kp JP_DQUOTE   &kp JP_ QUOTE   &kp JP_CARET     &kp JP_AT       &kp JP_              &trans        &trans       &kp JP_LBRACE    &kp JP_RBRACE    &trans    &kp PERCENT   &kp F12
+&kp JP_EQUAL    &kp JP_YEN      &kp JP_AMPERSAND &kp DOLLAR      &kp JP_UNDERSCORE    &trans        &kp JP_COLON &kp JP_LPAREN    &kp JP_RPAREN    &kp EXCL  &kp F9        &kp F4
+&kp JP_DQUOTE   &kp JP_ QUOTE   &kp JP_CARET     &kp JP_AT       &kp JP_TILDE         &kp JP_PIPE   &trans       &kp JP_LBRACE    &kp JP_RBRACE    &trans    &kp PERCENT   &kp F12
 &trans          &trans          &trans           &trans          &trans               &trans        &trans       &trans                            &kp F3
             >;
         };
