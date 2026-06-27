@@ -112,8 +112,7 @@
             bindings = <&kp SLASH>;
             key-positions = <31 32>;
         };
-
-      };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -176,21 +175,21 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                     &kp T                                                    &kp Y  &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                     &kp G        &kp LS(LG(S))                 &kp F9        &kp H  &kp J  &kp K      &kp L    &kp ENTER
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                     &kp B        &kp ESCAPE                    &kp F10       &kp N  &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL JP_KANA  &lt 2 SPACE  &lt_to_layer_0 3 JP_EISU      &lt 1 F2     &kp BACKSPACE                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R                     &kp T                                                &kp Y          &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                     &kp G        &kp LS(LG(S))                 &kp F9    &kp H          &kp J  &kp K      &kp L    &kp ENTER
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                     &kp B        &kp ESCAPE                    &kp F10   &kp N          &kp M  &kp COMMA  &kp DOT  &kp MINUS
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL JP_KANA  &lt 2 SPACE  &lt_to_layer_0 3 JP_EISU      &lt 1 F2  &kp BACKSPACE                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        FUNCTION {           // Layer1
+        FUNCTION {
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4    &kp NUMBER_5                                    &kp JP_LBRACKET  &kp JP_RBRACKET  &kp F6    &kp F7        &kp F8
-&kp JP_EQUAL    &kp JP_YEN      &kp JP_AMPERSAND &kp DOLLAR      &kp JP_UNDERSCORE    &trans        &kp JP_COLON &kp JP_LPAREN    &kp JP_RPAREN    &kp EXCL  &kp F9        &kp F4
-&kp JP_DQUOTE   &kp JP_QUOTE    &kp JP_CARET     &kp JP_AT       &kp JP_TILDE         &kp JP_PIPE   &trans       &kp JP_LBRACE    &kp JP_RBRACE    &trans    &kp PERCENT   &kp F12
-&trans          &trans          &trans           &trans          &trans               &trans        &trans       &trans                            &kp F3
+&kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5                                      &kp JP_LBRACKET  &kp JP_RBRACKET  &kp F6        &kp F7       &kp F8
+&kp JP_EQUAL   &kp JP_YEN    &kp JP_AMPERSAND  &kp DOLLAR    &kp JP_UNDERSCORE  &trans           &kp JP_COLON  &kp JP_LPAREN    &kp JP_RPAREN    &kp EXCL      &kp F9       &kp F4
+&kp JP_DQUOTE  &kp JP_QUOTE  &kp JP_CARET      &kp JP_AT     &kp JP_TILDE       &kp JP_PIPE      &trans        &kp JP_LBRACE    &kp JP_RBRACE    &kp QUESTION  &kp PERCENT  &kp F12
+&trans         &trans        &trans            &trans        &trans             &trans           &trans        &trans                                                       &kp F3
             >;
         };
 
@@ -199,16 +198,16 @@
 &kp CARET                   &kp AMPERSAND    &kp TILDE        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                       &kp JP_PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH
 &kp SLASH                   &kp EXCL         &kp AT           &kp HASH              &kp DOLLAR             &kp LC(LA(KP_NUMBER_0))      &none   &kp MINUS        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp UNDER             &kp PERCENT            &kp EQUAL                    &trans  &kp JP_ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
-&trans                      &trans           &trans           &trans                &trans                 &trans                       &trans  &trans                                                     &kp NUMBER_0
+&trans                      &trans           &trans           &trans                &trans                 &trans                       &trans  &trans                                                     &kp DOT
             >;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &kp PAGE_UP    &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &kp PAGE_DOWN  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_WIN
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans         &kp HOME         &kp END         &trans           &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                           &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &kp PAGE_UP      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp HOME
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &kp PAGE_DOWN    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &kp RIGHT_SHIFT  &kp HOME         &kp END         &trans           &kp END
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
