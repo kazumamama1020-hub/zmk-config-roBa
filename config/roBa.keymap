@@ -177,7 +177,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                     &kp T                                                   &kp Y          &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                     &kp G        &kp LS(LG(S))                 &kp F9       &kp H          &kp J  &kp K      &kp L    &mt RIGHT_SHIFT ENTER
+&kp A             &kp S         &kp D         &kp F                     &kp G        &kp LS(LG(S))                 &lt 6 F9     &kp H          &kp J  &kp K      &kp L    &mt RIGHT_SHIFT ENTER
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                     &kp B        &kp ESCAPE                    &kp F10      &kp N          &kp M  &kp COMMA  &kp DOT  &kp MINUS
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL JP_KANA  &lt 2 SPACE  &lt_to_layer_0 3 JP_EISU      &lt 1 GRAVE  &kp BACKSPACE                             &kp DEL
             >;
