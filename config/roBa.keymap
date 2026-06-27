@@ -31,6 +31,15 @@
 #define JP_HANZEN       GRAVE             // 半角/全角
 #define MOUSE 4
 
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
+    excluded-positions = <
+        18 // あなたのキーボードの正しいJの番号
+        19 // 正しいKの番号
+        20 // 正しいLの番号
+    >;
+};
+
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
