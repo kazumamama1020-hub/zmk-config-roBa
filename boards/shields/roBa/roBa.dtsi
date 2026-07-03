@@ -115,6 +115,18 @@
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
+
+        slow_dpi {
+            layers = <7>;
+            input-processors = <&zip_xy_scaler 1 5>;   // 移動量を1/5に。数値はお好みで
+        };
+
+        normal {
+            layers = <0>;
+            input-processors = <&zip_temp_layer MOUSE 2000>;   // 元々の設定(AML)
+        };
+
+
     };
 };
 
