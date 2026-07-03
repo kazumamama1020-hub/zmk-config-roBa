@@ -102,26 +102,6 @@
             bindings = <&kp F2>;
             key-positions = <1 2>;
         };
-
-        tasu {
-            bindings = <&kp PLUS>;
-            key-positions = <6 7>;
-        };
-
-        hiku {
-            bindings = <&kp MINUS>;
-            key-positions = <7 8>;
-        };
-
-        kakeru {
-            bindings = <&kp ASTRK>;
-            key-positions = <30 31>;
-        };
-
-        waru {
-            bindings = <&kp SLASH>;
-            key-positions = <31 32>;
-        };
     };
 
     macros {
@@ -149,30 +129,17 @@
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &exit_AML>;
             label = "KP_exit_AML";
         };
-
-         click_and_exit: click_and_exit {
-                label = "CLICK_AND_EXIT";
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings =
-               <&macro_press &mkp MB1>
-                , <&macro_pause_for_release> // ドラッグ対策に離すまで待つ
-                , <&macro_release &mkp MB1>
-                , <&macro_tap &to 0> // デフォルトレイヤーに戻る
-                , <&macro_tap &sl_mouse 5> // 一瞬だけクリック用レイヤに飛ぶ
-            ;
-        };
     };
 
     behaviors {
-         sl_mouse: sticky_layer_for_mouse {
+        sl_mouse: sticky_layer_for_mouse {
             compatible = "zmk,behavior-sticky-key";
             #binding-cells = <1>;
             bindings = <&mo>;
             release-after-ms = <200>; // 200msだけクリック用レイヤに移動する（必要に応じて時間を変更）
             quick-release;
             ignore-modifiers;
-      };
+        };
 
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
@@ -189,17 +156,6 @@
             display-name = "Toggle Layer Off";
             toggle-mode = "off";
         };
-
-        mt_exit_AML_on_tap: mt_exit_AML_on_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_exit_AML_ON_TAP";
-            bindings = <&kp>, <&kp_exit_AML>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-            quick-tap-ms = <200>;
-        };
     };
 
     keymap {
@@ -208,7 +164,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                     &kp T                                                   &kp Y          &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                     &kp G        &kp LS(LG(S))                 &lt 6 F9     &kp H          &kp J  &kp K      &kp L    &mt RIGHT_SHIFT ENTER
+&kp A             &kp S         &kp D         &kp F                     &kp G        &kp LS(LG(S))                 &lt 6 F9     &kp H          &kp J  &kp K      &kp L    &kp ENTER
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                     &kp B        &kp ESCAPE                    &kp F10      &kp N          &kp M  &kp COMMA  &kp DOT  &kp MINUS
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL JP_KANA  &lt 2 SPACE  &lt_to_layer_0 3 JP_EISU      &lt 1 GRAVE  &kp BACKSPACE                             &kp DEL
             >;
@@ -256,10 +212,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans           &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &click_and_exit  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans           &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
             >;
         };
 
