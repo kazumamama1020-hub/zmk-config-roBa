@@ -231,7 +231,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LA(LEFT_ARROW)  &trans    &kp RA(RIGHT_ARROW)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                     &trans
             >;
-            >;
         };
 
         layer_6 {
