@@ -200,10 +200,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R          &kp T                                                   &kp Y          &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F          &kp G        &kp LS(LG(S))                 &lt 6 F9     &kp H          &kp J  &kp K      &kp L    &kp ENTER
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V          &kp B        &kp ESCAPE                    &kp F10      &kp N          &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT MINUS
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 JP_KANA  &lt 2 SPACE  &lt_to_layer_0 3 JP_EISU      &lt 1 LC(Z)  &kp BACKSPACE                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R                  &kp T                                                   &kp Y          &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                  &kp G        &kp LS(LG(S))                 &lt 6 F9     &kp H          &kp J  &kp K      &kp L    &kp ENTER
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                  &kp B        &kp ESCAPE                    &kp F10      &kp N          &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT MINUS
+&kp LEFT_CONTROL  &kp LEFT_WIN  &mo 5         &mt LEFT_ALT JP_KANA   &lt 2 SPACE  &lt_to_layer_0 3 JP_EISU      &lt 1 LC(Z)  &kp BACKSPACE                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp SCRL_UP SCRL_DOWN>;
