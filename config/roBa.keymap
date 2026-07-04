@@ -226,7 +226,7 @@
 &kp LEFT_CONTROL  &kp LEFT_WIN  &mo 5  &mt LEFT_ALT JP_KANA  &lt 2 SPACE  &lt_to_layer_0 3 JP_EISU      &lt_undo 1 0  &kp BACKSPACE                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp LC(UP_ARROW) LC(DOWN_ARROW)>;
         };
 
         FUNCTION {
