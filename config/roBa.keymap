@@ -71,7 +71,7 @@
 
 &trackball {
     automouse-layer = <255>;
-    scroll-layers = <5>;
+    scroll-layers = <255>;
 
     // arrows {
     //     layers = <3>;
@@ -212,7 +212,7 @@
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 JP_KANA  &lt 2 SPACE  &lt_to_layer_0 3 JP_EISU      &lt 1 LC(Z)  &kp BACKSPACE                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp SCRL_UP SCRL_DOWN>;
         };
 
         FUNCTION {
