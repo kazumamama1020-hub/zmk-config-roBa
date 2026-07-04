@@ -43,7 +43,7 @@
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
-    input-processors = <&zip_temp_layer MOUSE 2000>, &zip_xy_scaler 3 2>;
+    input-processors = <&zip_temp_layer MOUSE 2000>, <&zip_xy_scaler 3 2>;
 };
 
 &mt {
