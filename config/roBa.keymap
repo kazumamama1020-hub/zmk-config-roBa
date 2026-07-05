@@ -256,7 +256,7 @@
             bindings = <
 &kp LA(NUMBER_1)   &kp LA(NUMBER_2)    &kp LA(NUMBER_3)       &kp LA(NUMBER_4)   &kp LA(NUMBER_5)                                         &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DOT
 &kp JP_QUOTE       &kp JP_COLON        &kp JP_EQUAL           &kp DOLLAR         &kp PERCENT      &trans            &kp JP_ASTERISK       &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
-&mt JP_DQUOTE      &kp JP_COLON        &kp JP_UNDERSCORE      &kp DOLLAR         &kp PERCENT      &kp JP_CARET      &kp SLASH             &kp JP_PLUS    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
+&kp JP_DQUOTE      &kp JP_COLON        &kp JP_UNDERSCORE      &kp DOLLAR         &kp PERCENT      &kp JP_CARET      &kp SLASH             &kp JP_PLUS    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
 &trans             &trans              &trans                 &trans             &trans           &trans            &trans                &trans                                                   &trans
             >;
         };
