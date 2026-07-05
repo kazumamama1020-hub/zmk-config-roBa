@@ -242,17 +242,17 @@
             bindings = <
 &kp F1   &kp F2   &kp F3   &kp F4   &none                                     &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_LBRACKET  &kp JP_RBRACKET     &none
 &kp F5   &kp F6   &kp F7   &kp F8   &none   &trans           &kp JP_PIPE      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_LBRACE    &kp JP_RBRACE       &trans
-&kp F9   &kp F10  &kp F11  &kp F12  &none   &trans           &kp JP_TILDE     &kp EXCL         &kp QUESTION     &kp QUESTION     &kp JP_YEN          &kp JP_AT
+&kp F9   &kp F10  &kp F11  &kp F12  &none   &trans           &kp JP_TILDE     &kp EXCL         &kp QUESTION     &kp JP_YEN       &kp JP_AT           &none
 &trans   &trans   &trans   &trans   &trans  &trans           &trans           &trans                                                                 &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp LA(NUMBER_1)   &kp LA(NUMBER_2)    &kp LA(NUMBER_3)       &kp LA(NUMBER_4)   &kp LA(NUMBER_5)                                         &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DOT
-&kp JP_QUOTE       &kp JP_COLON        &kp JP_EQUAL           &kp DOLLAR         &kp PERCENT      &trans            &kp JP_ASTERISK       &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
-&kp JP_DQUOTE      &kp JP_COLON        &kp JP_UNDERSCORE      &kp DOLLAR         &kp PERCENT      &kp JP_CARET      &kp SLASH             &kp JP_PLUS    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
-&trans             &trans              &trans                 &trans             &trans           &trans            &trans                &trans                                                   &trans
+&kp NUMBER_1   &kp NUMBER_2    &kp NUMBER_3       &kp NUMBER_4   &kp NUMBER_5                                                 &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DOT
+&kp JP_QUOTE   &kp JP_COLON    &kp JP_EQUAL       &kp DOLLAR     &kp PERCENT          &trans            &kp JP_ASTERISK       &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
+&kp JP_DQUOTE  &kp JP_COLON    &kp JP_UNDERSCORE  &kp HASH       &kp JP_AMPERSAND     &kp JP_CARET      &kp SLASH             &kp JP_PLUS    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
+&trans         &trans          &trans             &trans         &trans               &trans            &trans                &trans                                                   &trans
             >;
         };
 
@@ -267,19 +267,19 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &kp LA(N)           &kp F2    &kp LA(E)            &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &click_and_exit     &mkp MB3  &mkp MB2             &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LA(LEFT_ARROW)  &trans    &kp RA(RIGHT_ARROW)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                     &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &none               &kp F2    &none       &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &click_and_exit     &mkp MB3  &mkp MB2    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &none               &trans    &none       &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &kp LA(N)           &kp F2    &kp LA(E)            &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &click_and_exit     &mkp MB3  &mkp MB2             &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LA(LEFT_ARROW)  &trans    &kp RA(RIGHT_ARROW)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                     &trans
+&kp LA(NUMBER_1)   &kp LA(NUMBER_2)    &kp LA(NUMBER_3)       &kp LA(NUMBER_4)   &kp LA(NUMBER_5)                      &kp LA(NUMBER_6)   &none               &kp F2    &none       &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &click_and_exit     &mkp MB3  &mkp MB2    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &none               &trans    &none       &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(JP_PLUS) LC(MINUS)>;
