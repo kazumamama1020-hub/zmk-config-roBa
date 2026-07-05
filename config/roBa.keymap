@@ -30,6 +30,7 @@
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
 #define MOUSE 4
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
@@ -204,15 +205,23 @@
         };
 
         // 【追加】ホールドでレイヤー移動、タップでマクロ（Ctrl+Z）を実行する設定
-
         lt_undo: lt_undo {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_UNDO";
             bindings = <&mo>, <&undo_macro>;
- // ホールドでmo、タップでマクロ
+             // ホールドでmo、タップでマクロ
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        encoder_msc_down_up: encoder_msc_down_up {
+           compatible = "zmk,behavior-sensor-rotate";
+           label = "ENCODER_MSC_DOWN_UP";
+           #sensor-binding-cells = <0>;
+           bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+           tap-ms = <20>;
+       };
+
     };
 
     keymap {
@@ -226,7 +235,7 @@
 &kp LEFT_CONTROL  &kp LEFT_WIN  &mo 5  &mt LEFT_ALT JP_KANA  &lt 2 SPACE  &lt_to_layer_0 3 JP_EISU      &lt_undo 1 0  &kp BACKSPACE                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(UP_ARROW) LC(DOWN_ARROW)>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {
