@@ -240,31 +240,34 @@
 
         FUNCTION {
             bindings = <
-&kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5                                      &kp JP_LBRACKET  &kp JP_RBRACKET  &kp F6        &kp F7       &kp F8
-&kp JP_EQUAL   &kp JP_YEN    &kp JP_AMPERSAND  &kp DOLLAR    &kp JP_UNDERSCORE  &trans           &kp JP_COLON  &kp JP_LPAREN    &kp JP_RPAREN    &kp EXCL      &kp F9       &kp F4
-&kp JP_DQUOTE  &kp JP_QUOTE  &kp JP_CARET      &kp JP_AT     &kp JP_TILDE       &kp JP_PIPE      &kp F5        &kp JP_LBRACE    &kp JP_RBRACE    &kp QUESTION  &kp PERCENT  &kp F12
-&trans         &trans        &trans            &trans        &trans             &trans           &trans        &trans                                                       &kp F3
+&kp F1   &kp F2   &kp F3   &kp F4   &none                                     &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_LBRACKET  &kp JP_RBRACKET     &none
+&kp F5   &kp F6   &kp F7   &kp F8   &none   &trans           &kp JP_PIPE      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_LBRACE    &kp JP_RBRACE       &trans
+&kp F9   &kp F10  &kp F11  &kp F12  &none   &trans           &kp JP_TILDE     &kp EXCL         &kp QUESTION     &kp QUESTION     &kp JP_YEN          &kp JP_AT
+&trans   &trans   &trans   &trans   &trans  &trans           &trans           &trans                                                                 &trans
+
+// &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5                                      &kp JP_LBRACKET  &kp JP_RBRACKET  &kp F6        &kp F7       &kp F8
+// &kp JP_EQUAL   &kp JP_YEN    &kp JP_AMPERSAND  &kp DOLLAR    &kp JP_UNDERSCORE  &trans           &kp JP_COLON  &kp JP_LPAREN    &kp JP_RPAREN    &kp EXCL      &kp F9       &kp F4
+// &kp JP_DQUOTE  &kp JP_QUOTE  &kp JP_CARET      &kp JP_AT     &kp JP_TILDE       &kp JP_PIPE      &kp F5        &kp JP_LBRACE    &kp JP_RBRACE    &kp QUESTION  &kp PERCENT  &kp F12
+// &trans         &trans        &trans            &trans        &trans             &trans           &trans        &trans                                                       &kp F3
             >;
         };
 
         NUM {
             bindings = <
-&kp CARET                   &kp AMPERSAND    &kp TILDE        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                       &kp JP_PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH
-&kp SLASH                   &kp EXCL         &kp AT           &kp HASH              &kp DOLLAR             &kp LC(LA(KP_NUMBER_0))      &none   &kp MINUS        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp UNDER             &kp PERCENT            &kp EQUAL                    &trans  &kp JP_ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
-&trans                      &trans           &trans           &trans                &trans                 &trans                       &trans  &trans                                                     &kp DOT
+&kp LA(NUMBER_1)   &kp LA(NUMBER_2)    &kp LA(NUMBER_3)       &kp LA(NUMBER_4)   &kp LA(NUMBER_5)                                         &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DOT
+&kp JP_QUOTE       &kp JP_COLON        &kp JP_EQUAL           &kp DOLLAR         &kp PERCENT      &trans            &kp JP_ASTERISK       &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
+&mt JP_DQUOTE      &kp JP_COLON        &kp JP_UNDERSCORE      &kp DOLLAR         &kp PERCENT      &kp JP_CARET      &kp SLASH             &kp JP_PLUS    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
+&trans             &trans              &trans                 &trans             &trans           &trans            &trans                &trans                                                   &trans
             >;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &kp PAGE_UP      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp HOME
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &kp PAGE_DOWN    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &kp RIGHT_SHIFT  &kp HOME         &kp END         &trans           &kp END
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                             &trans
+&none      &none     &none    &none     &none                       &kp PAGE_UP    &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp HOME
+&none      &none     &none    &none     &none   &trans      &none   &none          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&none      &none     &none    &none     &none   &none       &none   &kp PAGE_DOWN  &kp LC(PAGE_UP)  &none           LC(PAGE_DOWN)    &kp END
+&trans     &trans    &trans   &trans    &trans  &trans      &trans  &trans                                                           &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
