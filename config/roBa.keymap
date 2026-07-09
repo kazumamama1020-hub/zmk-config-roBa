@@ -299,10 +299,10 @@ middle_click_and_exit: middle_click_and_exit {
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &none               &kp F2    &none       &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &click_and_exit     middle_click_and_exit  &right_click_and_exit    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &none               &trans    &none       &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &none               &kp F2                  &none                    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &click_and_exit     middle_click_and_exit   &right_click_and_exit    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &none               &trans                  &none                    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                          &trans
             >;
         };
 
