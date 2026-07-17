@@ -36,7 +36,7 @@
     require-prior-idle-ms = <200>;
     excluded-positions = <
         18 // あなたのキーボードの正しいJの番号
-        19 // 正しいKの番号
+         7 // 正しいIの番号
         20 // 正しいLの番号
     >;
 };
@@ -262,7 +262,7 @@ middle_click_and_exit: middle_click_and_exit {
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E  &kp R                 &kp T                                                    &kp Y          &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D  &kp F                 &kp G        &kp LS(LG(S))                 &lt 6 F9      &kp H          &kp J  &kp K      &kp L    &kp ENTER
+&kp A             &kp S         &kp D  &kp F                 &kp G        &kp LS(LG(S))                 &lt 6 F9      &kp H          &kp J  &lt 4 K    &kp L    &kp ENTER
 &mt LEFT_SHIFT Z  &kp X         &kp C  &kp V                 &kp B        &kp ESCAPE                    &kp F10       &kp N          &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT MINUS
 &kp LEFT_CONTROL  &kp LEFT_WIN  &mo 5  &mt LEFT_ALT JP_KANA  &lt 2 SPACE  &lt_to_layer_0 3 JP_EISU      &lt_undo 1 0  &kp BACKSPACE                             &kp DEL
             >;
@@ -272,7 +272,7 @@ middle_click_and_exit: middle_click_and_exit {
 
         FUNCTION {
             bindings = <
-&kp F1   &kp F2   &kp F3   &kp F4   &none                                     &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_LBRACKET  &kp JP_RBRACKET     &none
+&kp F1   &kp F2   &kp F3   &kp F4   &none                                     &kp JP_LBRACKET  &kp JP_RBRACKET  &kp LESS THAN    &kp GREATER THAN    &none
 &kp F5   &kp F6   &kp F7   &kp F8   &none   &trans           &kp JP_PIPE      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_LBRACE    &kp JP_RBRACE       &trans
 &kp F9   &kp F10  &kp F11  &kp F12  &none   &trans           &kp JP_TILDE     &kp EXCL         &kp QUESTION     &kp JP_YEN       &kp JP_AT           &none
 &trans   &trans   &trans   &trans   &trans  &trans           &trans           &trans                                                                 &trans
@@ -299,19 +299,19 @@ middle_click_and_exit: middle_click_and_exit {
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &none               &kp F2                  &none                    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &click_and_exit     &middle_click_and_exit   &right_click_and_exit   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &none               &trans                  &none                    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &none               &middle_click_and_exit   &none                    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &click_and_exit     &trans                   &right_click_and_exit    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &none               &trans                   &none                    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                        &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&kp LA(NUMBER_1)   &kp LA(NUMBER_2)    &kp LA(NUMBER_3)       &kp LA(NUMBER_4)   &kp LA(NUMBER_5)                      &kp LA(NUMBER_6)   &none               &kp F2    &none       &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &click_and_exit     &middle_click_and_exit  &right_click_and_exit    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &none               &trans    &none       &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &none               &middle_click_and_exit   &none                    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &click_and_exit     &trans                   &right_click_and_exit    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &none               &trans                   &none                    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(JP_PLUS) LC(MINUS)>;
