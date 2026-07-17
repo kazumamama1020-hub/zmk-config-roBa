@@ -272,7 +272,7 @@ middle_click_and_exit: middle_click_and_exit {
 
         FUNCTION {
             bindings = <
-&kp F1   &kp F2   &kp F3   &kp F4   &none                                     &kp JP_LBRACKET  &kp JP_RBRACKET  &kp LESS THAN    &kp GREATER THAN    &none
+&kp F1   &kp F2   &kp F3   &kp F4   &none                                     &kp JP_LBRACKET  &kp JP_RBRACKET  &kp LS(COMMA)    &kp LS(DOT)         &none
 &kp F5   &kp F6   &kp F7   &kp F8   &none   &trans           &kp JP_PIPE      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_LBRACE    &kp JP_RBRACE       &trans
 &kp F9   &kp F10  &kp F11  &kp F12  &none   &trans           &kp JP_TILDE     &kp EXCL         &kp QUESTION     &kp JP_YEN       &kp JP_AT           &none
 &trans   &trans   &trans   &trans   &trans  &trans           &trans           &trans                                                                 &trans
