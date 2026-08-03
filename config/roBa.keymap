@@ -302,19 +302,19 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &none            &none                   &none                   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &click_and_exit  &middle_click_and_exit  &right_click_and_exit   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &none            &none                   &none                   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                   &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &none            &none                   &none                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &click_and_exit  &middle_click_and_exit  &right_click_and_exit  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &none            &none                   &none                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                  &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &none            &middle_click_and_exit  &none                  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &click_and_exit  &trans                  &right_click_and_exit  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &none            &trans                  &none                  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                  &trans
+&kp LA(KP_NUMBER_1)  &kp LA(KP_NUMBER_2)  &kp LA(KP_NUMBER_3)  &kp LA(KP_NUMBER_4)  &kp LA(KP_NUMBER_5)                      &trans  &none            &middle_click_and_exit  &none                  &trans
+&trans               &trans               &trans               &trans               &trans               &trans      &trans  &trans  &click_and_exit  &trans                  &right_click_and_exit  &trans
+&trans               &trans               &trans               &trans               &trans               &trans      &trans  &trans  &none            &trans                  &none                  &trans
+&trans               &trans               &trans               &trans               &trans               &trans      &trans  &trans                                                                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(JP_PLUS) LC(MINUS)>;
