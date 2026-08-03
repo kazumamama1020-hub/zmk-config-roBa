@@ -36,7 +36,7 @@
     require-prior-idle-ms = <200>;
     excluded-positions = <
         18 // あなたのキーボードの正しいJの番号
-         7 // 正しいIの番号
+        19 // 正しいIの番号
         20 // 正しいLの番号
     >;
 };
@@ -54,7 +54,7 @@
 
     change_layer {
         layers = <0>;
-        input-processors = <&zip_xy_scaler 2 1>, <&zip_temp_layer MOUSE 4000>;
+        input-processors = <&zip_xy_scaler 5 2>, <&zip_temp_layer MOUSE 4000>;
     };
 };
 
@@ -267,7 +267,7 @@
 &kp Q             &kp W         &kp E  &kp R                 &kp T                                                  &kp Y          &kp U  &kp I      &kp O      &kp P
 &kp A             &kp S         &kp D  &kp F                 &kp G        &kp LS(LG(S))               &lt 6 F9      &kp H          &kp J  &kp K      &kp MINUS  &lt 7 ENTER
 &mt LEFT_SHIFT Z  &kp X         &kp C  &kp V                 &kp B        &kp ESCAPE                  &kp F10       &kp N          &kp M  &kp COMMA  &kp DOT    &mt LEFT_SHIFT L
-&kp LEFT_CONTROL  &kp LEFT_WIN  &mo 5  &mt LEFT_ALT JP_KANA  &lt 2 SPACE  &lt_to_layer_0 3 JP_EISU    &lt_undo 1 0  &kp BACKSPACE                               &kp DEL
+&kp LEFT_CONTROL  &kp LEFT_WIN  &mo 5  &mt LEFT_ALT JP_EISU   &lt 2 SPACE  &lt_to_layer_0 3 JP_KANA    &lt_undo 1 0  &kp BACKSPACE                               &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
