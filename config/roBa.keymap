@@ -49,12 +49,12 @@
 
     smaller_dpi {
         layers = <5>;
-        input-processors = <&zip_temp_layer MOUSE 4000>, <&zip_xy_scaler 1 5>;
+        input-processors =  <&zip_xy_scaler 1 5>; //<&zip_temp_layer MOUSE 4000>,
     };
 
     change_layer {
         layers = <0>;
-        input-processors = <&zip_xy_scaler 5 2>, <&zip_temp_layer MOUSE 4000>;
+        input-processors = <&zip_xy_scaler 5 2>; //, <&zip_temp_layer MOUSE 4000>;
     };
 };
 
