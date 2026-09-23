@@ -295,7 +295,7 @@
             bindings = <
 &none           &none           &kp UP_ARROW    &none      &none                         &kp PAGE_UP    &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)        &kp HOME
 &none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp HOME  &trans      &none   &none          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW    &trans
-&kp LEFT_SHIFT  &kp PG_UP       &kp PG_DN       &none      &kp END   &none       &none   &kp PAGE_DOWN  &kp LC(PAGE_UP)  &none           &kp LC(PAGE_DOWN)  &kp END
+&kp LEFT_SHIFT  &kp PG_UP       &kp PG_DN       &none      &kp END   &none       &none   &kp PAGE_DOWN  &kp LC(PAGE_UP)  &kp DOWN_ARROW  &kp LC(PAGE_DOWN)  &kp END
 &trans          &trans          &trans          &trans     &trans    &trans      &trans  &trans                                                             &trans
             >;
         };
